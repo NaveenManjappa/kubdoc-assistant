@@ -5,3 +5,5 @@ app/ingestion/loaders/__pycache__/
 app/services/retrieval/__pycache__/
 app/ingestion/chuncking/__pycache__/
 app/services/__pycache__/
+app/agents/__pycache__/
+app/agents/nodes/__pycache__/
