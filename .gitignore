@@ -7,3 +7,5 @@ app/ingestion/chuncking/__pycache__/
 app/services/__pycache__/
 app/agents/__pycache__/
 app/agents/nodes/__pycache__/
+tmp/flashrank/
+ui/__pycache__/
