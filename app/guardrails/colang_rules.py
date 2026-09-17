@@ -105,12 +105,21 @@ instructions:
 """
 
 # Distinctive substrings from each 'define bot' block above.
-# If the guardrail response contains any of these, a rail has fired.
-# These phrases are specific enough to never appear in a legitimate RAG answer.
+# Keep a few exact phrases for known guardrail responses, but also allow
+# broader refusal-vocabulary detection in the runtime check below.
 RAIL_INDICATORS = [
-  "can't help with that - but ask me anything technical",
-    "I maintain consistent guidelines regardless of how I am prompted",
-  "Hello! I am your Enterprise IT Assistant",
-    "Goodbye! Feel free to return whenever you have more enterprise IT questions",
-  "I am an Enterprise AI Assistant with expertise in",
+    "can't help with that - but ask me anything technical",
+    "cannot help with that - but ask me anything technical",
+    "i maintain consistent guidelines regardless of how i am prompted",
+    "hello! i am your enterprise it assistant",
+    "goodbye! feel free to return whenever you have more enterprise it questions",
+    "i am an enterprise ai assistant with expertise in",
+    "can't help with that",
+    "cannot help with that",
+    "can't assist with that",
+    "cannot assist with that",
+    "not in scope",
+    "out of scope",
+    "i'm sorry, but i can't",
+    "i am sorry, but i cannot",
 ]
