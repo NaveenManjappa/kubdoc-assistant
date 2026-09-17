@@ -14,6 +14,10 @@ class Settings:
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
     GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
     GROQ_FALLBACK_API_KEY = os.getenv("GROQ_FALLBACK_API_KEY")
-    GROQ_GUARD_MODEL = os.getenv("GROQ_GUARD_MODEL", "llama-3.1-8b-instant")
-
+    GROQ_GUARD_MODEL = os.getenv("GROQ_GUARD_MODEL", "openai/gpt-oss-20b")
+    PORTKEY_API_KEY=os.getenv("PORTKEY_API_KEY")
+    GROQ_SLUG="rag1"
+    GROQ_SLUG2="rag2"
+    PORTKEY_CONFIG=os.getenv("PORTKEY_CONFIG")
+    
 settings = Settings()

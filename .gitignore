@@ -10,3 +10,4 @@ app/agents/nodes/__pycache__/
 tmp/flashrank/
 ui/__pycache__/
 app/guardrails/__pycache__/
+app/gateway/__pycache__/
