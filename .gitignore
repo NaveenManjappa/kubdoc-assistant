@@ -11,3 +11,4 @@ tmp/flashrank/
 ui/__pycache__/
 app/guardrails/__pycache__/
 app/gateway/__pycache__/
+app/evals/__pycache__/
